@@ -11,6 +11,7 @@ html{
 body{
     font-family: sans-serif;
     font-size: 1.6rem;
+    background-color: #F3F9FF;
 }
 
 label, textarea, button{
@@ -18,4 +19,204 @@ label, textarea, button{
     width: 100%;
     padding: 1rem;
     font-size: 2rem;
+}
+
+
+
+/* Style the navbar */
+.navbar {
+    overflow: hidden;
+    height: 73px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar__title {
+    margin: 0 auto;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5em;
+    line-height: normal;
+    color: #4D5361
+}
+
+.navbar__title--bold {
+    display: inline-block;
+    color:  #4283F7;
+    text-transform: uppercase;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    display: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.searchbar {
+    height: 39px;
+    position: fixed;
+    top: 73px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbar__top {
+    height: 50%;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.searchbar__middle {
+    position: absolute;
+    width: 80vw;
+    height: 100%;
+    left: 10vw;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+
+.searchbar__bottom {
+}
+
+
+
+
+#content {
+    margin-top: 150px;
+    padding: 20px;
+    background-color: #F3F9FF;
+}
+
+
+
+
+.lessons {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.lesson {
+    margin: 30px 0;
+}
+
+.lesson__cat {
+    margin-bottom: 26px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: normal;
+}
+
+.lesson__cat span {
+    color:  #4283F7;
+}
+
+.lesson__slider {
+    display: flex;
+    width: 240vw;
+    overflow: hidden;
+}
+
+.lesson__box {
+    width: 60vw;
+    height: 100px;
+    margin-right: 20px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    display: flex;
+}
+
+.lesson__img {
+    background: red;
+    height: 100%;
+    width: 100px;
+}
+
+.lesson__desc {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 100px);
+}
+
+.lesson__title {
+    font-family: Montserrat, sans-serif;
+    color: #000000;
+}
+
+.lesson__subtitle {
+    font-family: Montserrat, sans-serif;
+    color: #4D5361;
+}
+
+.lesson__reviews {
+    display: flex;
+    
+}
+
+.lesson__star {
+    color: yellow;
+    font-size: 1em;
+}
+
+.lesson__nbstars {
+    font-family: Montserrat, sans-serif;
+    color: #4D5361;
+}
+
+.lesson__nbreviews {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(77, 83, 97, 0.75);
+}
+
+.lesson__reviews {
+    display: flex;
+    
+}
+
+.objective {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 60px 40px;
+    width: 70vw;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.objective__title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #4D5361;
+}
+
+.objective__subtitle {
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #4D5361;
+    padding: 0 10vw;
+    text-align: center;
+}
+
+.objective__desc {
+    color: #4D5361;
+    line-height: 1.5em;
 }
