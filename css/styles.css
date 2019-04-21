@@ -104,6 +104,8 @@ label, textarea, button{
     display: flex;
     flex-direction: column;
     align-items: left;
+    width: 100%;
+    overflow: hidden;
 }
 
 .lesson {
@@ -190,7 +192,8 @@ label, textarea, button{
     
 }
 
-.objective {
+.objective__inner {
+    position: absolute;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
     padding: 60px 40px;
@@ -200,6 +203,8 @@ label, textarea, button{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+    margin: auto;
 }
 
 .objective__title {
@@ -219,4 +224,22 @@ label, textarea, button{
 .objective__desc {
     color: #4D5361;
     line-height: 1.5em;
+}
+
+.objective {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.objective__top {
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
+
+.objective__bottom {
+   height: 50%;
+   width: 100%;
+   background-color: red;
 }
